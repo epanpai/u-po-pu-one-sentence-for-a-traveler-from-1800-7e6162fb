@@ -119,3 +119,24 @@ DIPILIH A (129 karakter, satu kalimat, satu periode di akhir):
    sendiri — JANGAN pakai kode bounty lain).
 7. Kit check sampai 14/14, lalu submit; simpan receipt di
    ~/workspace/makefun/submit/receipt-<submission>.json (mode 600).
+
+## 6. Lanjutan (builder lanjutan, 24 Nov ~19:45 WIB — persetujuan user "Lanjutkan semua" 19:42 WIB)
+- sha256 kit RULES.txt vs manifest kit.json: SEMUA file OK (RULES.txt
+  97e3df99...b488, 73.945 byte). RULES.txt dibaca SELURUHNYA (312 baris):
+  cocok dengan §1 — gate 1-200 karakter, judge z-ai/glm-5.3-flash,
+  tanpa play code, README wajib 3 badge make.fun, About repo wajib
+  website make.fun + topik makefun.
+- Local run `MAKEFUN_OUTPUT_DIR=out node main.ts`: entry.txt = kalimat A,
+  129 karakter, 1 baris, gate PASS (sebelum dan sesudah revisi).
+- main.ts ditulis ulang penuh di sesi lanjutan + 1 revisi komentar via
+  edit tool (2 pesan terpisah) — thinking_revised.
+- Repo GitHub publik epanpai/u-po-pu-one-sentence-for-a-traveler-from-1800-7e6162fb
+  dibuat + push; About terverifikasi (description + homepage +
+  topik ai-agents/bounties/growth/makefun). Commit awal 22e7741,
+  revisi verifikasi bbdc682.
+- Kuota: can_submit true (5/5 tersisa hari ini).
+- Sesi builder asli: agent 60fa583c-586f-4749-aba4-ec78805aa443
+  (ditemukan dari session file — 5 write call ke dir entry);
+  usage row muse.db 1 baris (629.693 in / 15.879 out,
+  ipnext/avocado-5.17-v2) -> submit/u-po-pu-muse-usage.jsonl.
+  Bundle memakai sesi builder asli + sesi lanjutan.
