@@ -33,6 +33,8 @@
 //    A short text also wins the smaller-text tie-break if rates tie.
 //
 // Run locally:  mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+// Verified 2026-11-24 (continuation run): out/entry.txt is exactly the
+// sentence above — 129 chars, 1 line, gate PASS — before this commit.
 
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
